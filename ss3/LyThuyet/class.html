@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Form:để tạo biểu mẫu thao tác với các dữ liệu -->
+     <!-- Method = get: gửi dữ liệu lên url? -->
+      <!-- Post : gửi dữ liệu trong inspect network -->
+     <form action="" method="get">
+        <!-- input để tạo Ô để nhập -->
+         <!-- type : xác định kiểu dữ liệu người dùng nhập -->
+          <!-- placeholder : dùng để miêu tả hoặc ví dụ người dùng cần nhập gì -->
+           <!-- require : bắt buộc người dùng nhập input đó -->
+            <!-- readonly chỉ cho đọc -->
+             <!-- value dữ liệu mặc định cho input -->
+        <div>
+            <label for="email">Tên người dùng:</label>
+            <input type="text" 
+            placeholder="nhập tên người dùng" 
+            maxlength="10" minlength="2" 
+            name="username" id="username" 
+            required="bruh" 
+            readonly value="bruh" ></div>
+        <!-- chữ -->
+        <br>
+        <div>Tuổi :<input type="number" ></div>
+        <!-- số -->
+        <br>
+        <div>Email :<input 
+            type="email" 
+            id="email" 
+            name="emaildemo"></div>
+        <!-- email -->
+        <br>
+        <div>Chọn màu yêu thích :<input type="color" ></div>
+        <!-- màu -->
+        <br>
+        <div>Ngày tháng năm sinh :<input type="date" ></div>
+        <!-- nhập ngày tháng năm sinh -->
+        <br>
+        <div>Mật khẩu :<input type="password" ></div>
+        <!-- mật khẩu -->
+        <br>
+        <div>Mức độ :<input type="range" ></div>
+        <br>
+        <div><input type="submit" ></div>
+        <br>
+        <div><textarea 
+            name="" 
+            id="" 
+            rows="3" 
+            placeholder="ưhatssup"></textarea></div>
+        <br>
+        <!-- radio : chọn một lựa chọn -->
+        <div>
+            <label for="genderM">Nam</label>
+            <input type="radio" 
+            id="genderM"
+            name="gender" value="Male">
+            <label for="genderF">Nữ</label>
+            <input type="radio" 
+            id="genderF"
+            name="gender" value="Female">
+        </div>
+        <br>
+        <!-- checkbox -->
+         <div>
+            <label for="genderMC">Nam</label>
+            <input type="checkbox" 
+            id="genderMC"
+            name="gender" value="Male">
+            <label for="genderFC">Nữ</label>
+            <input type="checkbox" 
+            id="genderFC"
+            name="gender" value="Female">
+        </div>
+        <br>
+        <!-- select,option : lựa chọn dropdown -->
+        <div>
+            <label for="ThanhPho">Thành phố sinh sống</label>
+            <select name="ThanhPho" id="ThanhPho" multiple>
+            <option value="HàNam">Hà Nam</option>
+            <option value="HàNội">Hà Nội</option>
+            <option value="NinhBình" selected>Ninh Bình</option>
+        </select></div>
+     </form>
+</body>
+</html>
